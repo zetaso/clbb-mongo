@@ -1,9 +1,0 @@
-services:
-  connection-example:
-    container_name: connection-example
-    build: .
-    restart: always
-    ports:
-      - "1234:1234"
-    volumes:
-      - .:/app

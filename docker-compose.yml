@@ -12,19 +12,19 @@ services:
     volumes:
       - mongo_data:/data/db
       - mongo_config:/data/configdb
-    # networks:
-      # - clbb
+    networks:
+      - clbb
 
-  connection-example:
-    container_name: connection-example
-    build: ./connection-example
-    restart: always
-    ports:
-      - "1234:1234"
-    volumes:
-      - ./connection-example:/app
-    # networks:
-      # - clbb
+  # connection-example:
+  #   container_name: connection-example
+  #   build: ./connection-example
+  #   restart: always
+  #   ports:
+  #     - "1234:1234"
+  #   volumes:
+  #     - ./connection-example:/app
+  #   # networks:
+  #     # - clbb
 
 volumes:
   mongo_data:
